@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Oswald&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/addEntry.css"/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="/index.html">Marco Balbontin-Ponce</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html#about_me">About me</a></li>
+                    <li><a href="/skills.html">Skills</a></li>
+                    <li><a href="/education.html">Education</a></li>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                    <li><a href="/addEntry.html">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article id="blog_container">
+            <form method="POST" action="https://drusmannaeem.co.uk/process.php" id="blog_form">
+                <fieldset>
+                    <legend>Add Blog</legend>
+
+                    <div id="blog_entry">
+                        <textarea placeholder="Title" name="title" id="title_box" required></textarea>
+                        <textarea placeholder="Enter your text here" name="content" id="text_box" required></textarea>
+                    </div>
+                    
+                    <div id="action_buttons">
+                        <button type="submit" id="post_button">Post</button>
+                        <button type="reset" id="clear_button">Clear</button>
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+
+        <footer>
+            <ul class="footer_links">
+                <li class="footer_name">Marco Balbontin-Ponce 2026 ©</li>
+                <li id="icon_link">
+                    <a href="https://www.flaticon.com/icons"> Icons from: Flaticon</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/marco-balbontin-ponce-21a5a5383/"><img src="/images/linkedin.png" class="link_img"/></a>
+                </li>
+                <li>
+                    <a href="mailto:marcobalbontinponce@gmail.com"><img src="/images/gmail.png" class="link_img"/></a>
+                </li>
+                <li>
+                    <a href="https://github.com/marcobalbontin"><img src="/images/github.png" class="link_img"></a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

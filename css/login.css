@@ -1,0 +1,167 @@
+.google-sans-flex-google-sans {
+    font-family: "Google Sans Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "wdth" 100,
+      "GRAD" 0,
+      "ROND" 0;
+}
+
+body {
+    background-color: #E9EBEE;
+    font-family: 'Google Sans Flex', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        '. login .'
+        'footer footer footer';
+    grid-template-rows: auto 89.2% auto;
+    grid-template-columns: auto auto auto;
+    gap: 1em;
+}
+
+/*Navigation/Header styling*/
+header {
+    grid-area: header;
+    background-color: #3b5998;
+    color: white;
+    display: flex;
+    max-width: 100%;
+    height: 5rem;
+    font-size: 125%;
+}
+
+nav {
+    width: 80%;
+    padding-left: 30rem;
+}
+
+header h1 {
+    padding-top: 1.8rem;
+    padding-left: 3rem;
+    text-align: center;
+    font-size: 120%;
+    width: 40%;
+}
+
+header ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 3rem;
+    padding-top: 0.5rem;
+    color: #eff4f8;
+}
+
+header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #579dff;
+}
+
+header a:active {
+    color: rgb(84, 247, 84);
+}
+
+/*Login form styling*/
+#login_container {
+    grid-area: login;
+    margin-top: 25%;
+    height: 28rem;
+    width: 30rem;
+    background-color: #4970be;
+}
+
+#login_form {
+    width: 25rem;
+    padding: 3%;
+    margin-top: 1.2rem;
+    margin-left: 1.6rem;
+    background-color: #F0F2F5;
+}
+
+/*Login fields styling*/
+#login_form fieldset{
+    height: 22.7rem;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+#login_form legend {
+    position: relative; /*moved relative to normal flow*/
+    text-align: center;
+    top: 2rem;
+    margin: 0em;
+    padding: 0em;
+    font-size: 1.5rem;
+}
+
+#credentials {
+    padding-top: 15%;
+}
+
+#login_form input {
+    padding: 8%;
+    margin-bottom: 5%;
+    width: 19.5rem;
+}
+
+/*Submit button styling*/
+#login_form button {
+    height: 4rem;
+    width: 15rem;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    background-color: #3286fb;
+    color: white;
+}
+
+
+/*Footer styling*/
+footer {
+    grid-area: footer;
+    background-color: #3b5998;
+    color: white;
+    max-width: 100%;
+    height: 3.8rem;
+}
+
+.link_img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.footer_links {
+    list-style: none;
+    display: flex; /*Line up items horizontally*/
+    gap: 2rem;
+}
+
+.footer_links li {
+    display: inline-flex; /*Each item sits inline*/
+}
+
+.footer_name {
+    padding-top: 0.5rem;
+    margin-right: 0rem;
+    width: 15rem;
+}
+
+#icon_link {
+    padding-top: 0.5rem;
+    margin-right: 49.1rem;
+}
+
+#icon_link a {
+    color: white;
+}
